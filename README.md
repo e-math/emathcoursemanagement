@@ -52,6 +52,13 @@ The course management system is licensed under
 
 Other programs and libraries are licensed with their respective licenses.
 
+Important!
+----------
+
+For testing and debugging purposes, this version saves users passwords in
+clear text! This is not safe for real usage! If you use this system, you
+should change the saving and checking the passwords to use safer methods!
+
 Documentation
 -------------
 The documentation can be found in `doc`-folder.
