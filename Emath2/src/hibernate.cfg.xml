@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/dbnamehere</property><!-- db-url -->
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+  <property name="hibernate.connection.username">insertdbusernamehere</property><!-- database username -->
+  <property name="hibernate.connection.password">insertpasswordhere</property><!-- database password -->
+  <property name="hibernate.connection.pool_size">10</property>
+  <property name="hibernate.current_session_context_class">thread</property>
+  
+  <property name="c3p0.acquire_increment">1</property> 
+  <property name="c3p0.idle_test_period">100</property> <!-- seconds --> 
+  <property name="c3p0.max_size">100</property> 
+  <property name="c3p0.max_statements">0</property> 
+  <property name="c3p0.min_size">10</property> 
+  <property name="c3p0.timeout">100</property>
+
+  <mapping class="Book" resource="org/emath/persistence/hibernate/book/Book.hbm.xml"/>
+  <mapping class="Assignment" resource="org/emath/persistence/hibernate/book/Assignment.hbm.xml"/>
+  <mapping class="AssignmentList" resource="org/emath/persistence/hibernate/book/AssignmentList.hbm.xml"/>
+  <mapping class="BookContent" resource="org/emath/persistence/hibernate/book/BookContent.hbm.xml"/>
+  <mapping class="ExampleboxData" resource="org/emath/persistence/hibernate/book/Chapter.hbm.xml"/>
+  <mapping class="DivAttributes" resource="org/emath/persistence/hibernate/book/DivAttributes.hbm.xml"/>
+  <mapping class="ExampleBox" resource="org/emath/persistence/hibernate/book/ExampleBox.hbm.xml"/>
+  <mapping class="ExampleBoxData" resource="org/emath/persistence/hibernate/book/ExampleBoxData.hbm.xml"/>
+  <mapping class="GraphElement" resource="org/emath/persistence/hibernate/book/GraphElement.hbm.xml"/>
+  <mapping class="Image" resource="org/emath/persistence/hibernate/book/Image.hbm.xml"/>
+  <mapping class="Section" resource="org/emath/persistence/hibernate/book/Section.hbm.xml"/>
+  <mapping class="SubSection" resource="org/emath/persistence/hibernate/book/SubSection.hbm.xml"/>
+  <mapping class="TextElement" resource="org/emath/persistence/hibernate/book/TextElement.hbm.xml"/>
+  <mapping class="TextElementData" resource="org/emath/persistence/hibernate/book/TextElementData.hbm.xml"/>
+  <mapping class="TheoryBox" resource="org/emath/persistence/hibernate/book/TheoryBox.hbm.xml"/>
+  <mapping class="TheoryBoxData" resource="org/emath/persistence/hibernate/book/TheoryBoxData.hbm.xml"/>
+  <mapping class="Discussion" resource="org/emath/persistence/hibernate/book/Discussion.hbm.xml"/>
+  <mapping class="DiscussionData" resource="org/emath/persistence/hibernate/book/DiscussionData.hbm.xml"/>
+  <mapping class="ExampleSd" resource="org/emath/persistence/hibernate/book/ExampleSd.hbm.xml"/>
+  <mapping class="ExampleSdData" resource="org/emath/persistence/hibernate/book/ExampleSdData.hbm.xml"/>
+  <mapping class="Prerequisite" resource="org/emath/persistence/hibernate/book/Prerequisite.hbm.xml"/>
+  <mapping class="PrerequisiteData" resource="org/emath/persistence/hibernate/book/PrerequisiteData.hbm.xml"/>
+  <mapping class="AssignmentSolution" resource="org/emath/persistence/hibernate/book/AssignmentSolution.hbm.xml" />
+  <mapping class="AddedContent" resource="org/emath/persistence/hibernate/book/AddedContent.hbm.xml" />
+  <mapping class="BookUpdate" resource="org/emath/persistence/hibernate/book/BookUpdate.hbm.xml"/>
+  <mapping class="Comment" resource="org/emath/persistence/hibernate/book/Comment.hbm.xml"/>
+  
+  <mapping class="User" resource="org/emath/persistence/hibernate/communication/User.hbm.xml"/>
+  <mapping class="CourseLock" resource="org/emath/persistence/hibernate/communication/CourseLock.hbm.xml"/>
+  <mapping class="School" resource="org/emath/persistence/hibernate/communication/School.hbm.xml"/>
+  <mapping class="SystemUpdate" resource="org/emath/persistence/hibernate/communication/SystemUpdate.hbm.xml"/>
+  <mapping class="Course" resource="org/emath/persistence/hibernate/communication/Course.hbm.xml"/>
+  <mapping class="LogEntry" resource="org/emath/persistence/hibernate/communication/LogEntry.hbm.xml"/>
+  <mapping class="TrafficLogEntry" resource="org/emath/persistence/hibernate/communication/TrafficLogEntry.hbm.xml"/>
+  <mapping class="ClientBook" resource="org/emath/persistence/hibernate/communication/ClientBook.hbm.xml"/>
+  <mapping class="Backup" resource="org/emath/persistence/hibernate/communication/Backup.hbm.xml"/>
+  <mapping class="Exam" resource="org/emath/persistence/hibernate/communication/Exam.hbm.xml"/>
+  <mapping class="ExamAccess" resource="org/emath/persistence/hibernate/communication/ExamAccess.hbm.xml"/>
+  <mapping class="ExamSolution" resource="org/emath/persistence/hibernate/communication/ExamSolution.hbm.xml"/>
+  <mapping class="History" resource="org/emath/persistence/hibernate/communication/History.hbm.xml"/>
+  <mapping class="DummySystemUpdate" resource="org/emath/persistence/hibernate/communication/DummySystemUpdate.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>

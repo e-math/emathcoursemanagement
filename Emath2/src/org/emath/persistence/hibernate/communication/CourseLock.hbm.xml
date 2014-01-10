@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 5.6.2012 14:57:09 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.emath.model.communication.CourseLock" table="course_lock">
+        <id name="id" type="int" access="field">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="courseId" type="int">
+            <column name="course_id" />
+        </property>
+        <property name="timestamp" type="java.util.Date" access="field">
+            <column name="timestamp" />
+        </property>
+    </class>
+</hibernate-mapping>

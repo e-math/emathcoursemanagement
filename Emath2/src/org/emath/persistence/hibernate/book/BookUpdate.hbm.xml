@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 7.8.2012 16:42:17 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.emath.model.book.BookUpdate" table="book_update">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="data" type="java.lang.String">
+            <column name="data" />
+        </property>
+        <property name="bookId" type="int">
+            <column name="book_id" />
+        </property>
+        <property name="type" type="int">
+            <column name="type" />
+        </property>
+        <property name="userId" type="int">
+            <column name="user_id" />
+        </property>
+        <property name="timestamp" type="java.util.Date">
+            <column name="timestamp" />
+        </property>
+        <property name="clientIp" type="java.lang.String">
+            <column name="client_ip" />
+        </property>
+        <property name="lang" type="java.lang.String">
+            <column name="lang" />
+        </property>
+        <property name="title" type="java.lang.String">
+            <column name="title" />
+        </property>
+    </class>
+</hibernate-mapping>

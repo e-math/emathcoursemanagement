@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24.1.2012 13:31:35 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <joined-subclass name="org.emath.model.book.Assignment" extends="org.emath.model.book.BookContent" table="assignment" lazy="false">
+        <key>
+            <column name="id" />
+        </key>
+        <property name="type" type="int">
+            <column name="type" />
+        </property>
+        <property name="level" type="int">
+            <column name="level" />
+        </property>
+    </joined-subclass>
+</hibernate-mapping>

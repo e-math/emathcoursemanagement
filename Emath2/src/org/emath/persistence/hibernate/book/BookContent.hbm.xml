@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 26.1.2012 15:42:03 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.emath.model.book.BookContent" table="bookcontent" abstract="true">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <discriminator type="string">
+            <column name="discr_col" />
+        </discriminator>
+        <property name="content" type="java.lang.String">
+            <column name="content" />
+        </property>
+        <many-to-one name="attributes" class="org.emath.model.book.DivAttributes" not-null="true" cascade="all,delete-orphan" unique="true">
+            <column name="attributes" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

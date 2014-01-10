@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 27.1.2012 12:47:55 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <joined-subclass name="org.emath.model.book.TheoryBox" extends="org.emath.model.book.BookContent" table="theorybox" lazy="false">
+        <key>
+            <column name="id" />
+        </key>
+        <many-to-one name="data" class="org.emath.model.book.TheoryBoxData" not-null="true" cascade="all,delete-orphan" unique="true">
+            <column name="data" />
+        </many-to-one>
+    </joined-subclass>
+</hibernate-mapping>

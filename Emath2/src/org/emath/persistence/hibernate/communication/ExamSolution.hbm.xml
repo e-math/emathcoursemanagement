@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 9.8.2012 12:19:27 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.emath.model.communication.ExamSolution" table="exam_solution">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="timestamp" type="java.util.Date">
+            <column name="timestamp" />
+        </property>
+        <property name="data" type="java.lang.String">
+            <column name="data" />
+        </property>
+        <property name="userId" type="int">
+            <column name="user_id" />
+        </property>
+        <property name="examId" type="int">
+            <column name="exam_id" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 29.3.2012 15:09:20 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.emath.model.book.AddedContent" table="addedcontent">
+        <id name="id" type="int" access="field">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="title" type="java.lang.String">
+            <column name="title" />
+        </property>
+        <property name="data" type="java.lang.String">
+            <column name="data" />
+        </property>
+        <property name="courseId" type="int">
+            <column name="course_id" />
+        </property>
+        <property name="userId" type="int">
+            <column name="user_id" />
+        </property>
+        <property name="isPublic" type="boolean">
+        	<column name="is_public" />
+        </property>
+        <property name="type" type="int">
+            <column name="type" />
+        </property>
+        <property name="timestamp" type="java.util.Date" access="field">
+            <column name="timestamp" />
+        </property>
+        <property name="available" type="java.util.Date" access="field">
+            <column name="available" />
+        </property>
+        <property name="clientIp" type="java.lang.String">
+            <column name="client_ip" />
+        </property>
+    </class>
+</hibernate-mapping>

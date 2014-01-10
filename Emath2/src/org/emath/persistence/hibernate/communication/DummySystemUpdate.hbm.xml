@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 21.6.2012 14:11:49 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.emath.model.communication.DummySystemUpdate" table="dummy_system_update">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="data" type="java.lang.String">
+            <column name="data" />
+        </property>
+        <property name="bookVersion" type="java.lang.String">
+            <column name="book_version" />
+        </property>
+        <property name="type" type="int">
+            <column name="type" />
+        </property>
+        <property name="timestamp" type="java.util.Date">
+            <column name="timestamp" />
+        </property>
+    </class>
+</hibernate-mapping>

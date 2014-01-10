@@ -1,0 +1,6 @@
+org.emath.model.book
+org.emath.model.communication
+org.emath.persistence.hibernate
+org.emath.service
+org.emath.test.service
+org.emath.web

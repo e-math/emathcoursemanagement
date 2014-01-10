@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 26.1.2012 15:42:03 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.emath.model.book.DivAttributes" table="divattributes">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="title" type="java.lang.String">
+            <column name="title" />
+        </property>
+        <property name="creator" type="java.lang.String">
+            <column name="creator" />
+        </property>
+        <property name="created" type="java.lang.String">
+            <column name="created" />
+        </property>
+        <property name="modifier" type="java.lang.String">
+            <column name="modifier" />
+        </property>
+        <property name="modified" type="java.lang.String">
+            <column name="modified" />
+        </property>
+        <property name="ebooktitle" type="java.lang.String">
+            <column name="ebooktitle" />
+        </property>
+        <property name="tags" type="java.lang.String">
+            <column name="tags" />
+        </property>
+        <property name="changecount" type="java.lang.String">
+            <column name="changecount" />
+        </property>
+    </class>
+</hibernate-mapping>

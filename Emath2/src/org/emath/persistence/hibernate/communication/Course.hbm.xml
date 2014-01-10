@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24.1.2012 13:31:35 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.emath.model.communication.Course" table="course" lazy="false">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <set name="teachers" inverse="false" table="teacher_in_course" fetch="select" lazy="false">
+            <key column="course_id" />
+            <many-to-many column="user_id" class="org.emath.model.communication.User" />
+        </set>
+        <set name="books" inverse="false" table="book_in_course" fetch="select" lazy="false">
+            <key column="course_id" />
+            <many-to-many column="book_id" class="org.emath.model.communication.ClientBook" />
+        </set>
+        <many-to-one name="school" class="org.emath.model.communication.School">
+            <column name="school_id" />
+        </many-to-one>
+        <set name="students" inverse="false" table="user_in_course" fetch="select" lazy="false">
+            <key column="course_id" />
+            <many-to-many column="user_id" class="org.emath.model.communication.User" />
+        </set>
+        <property name="bookLanguages" type="java.lang.String">
+            <column name="book_languages" />
+        </property>
+    </class>
+</hibernate-mapping>

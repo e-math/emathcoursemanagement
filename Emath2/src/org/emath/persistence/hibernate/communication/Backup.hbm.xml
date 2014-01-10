@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15.8.2012 11:39:19 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.emath.model.communication.Backup" table="backup">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="originalContentId" type="int">
+            <column name="originalcontent_id" />
+        </property>
+        <property name="type" type="int">
+            <column name="type" />
+        </property>
+        <property name="data" type="java.lang.String">
+            <column name="data" />
+        </property>
+        <property name="userId" type="int">
+            <column name="user_id" />
+        </property>
+        <property name="courseId" type="int">
+            <column name="course_id" />
+        </property>
+        <property name="clientIp" type="java.lang.String">
+            <column name="client_ip" />
+        </property>
+        <property name="timestamp" type="java.util.Date" access="field">
+            <column name="timestamp" />
+        </property>
+    </class>
+</hibernate-mapping>
