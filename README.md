@@ -37,6 +37,9 @@ Working version has used following versions of following libraries:
 * slf4j-api-1.5.8.jar
 * slf4j-log4j12-1.5.8.jar
 
+An empty MySQL database for course management can be created with commands in
+`emath_database.sql`.
+
 Who?
 ----
 The system was developed in EU-funded [E-Math -project](http://emath.eu) by
